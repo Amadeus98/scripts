@@ -16,7 +16,7 @@ rails g rspec:install
 rails g figaro:install 
 rails g devise:install 
 
-# Create client directory and begin Angular-related intalls 
+# Create client directory and begin Angular-related installs 
 mkdir client/
 cd client/
 yo angular $APP_NAME
