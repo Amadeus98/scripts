@@ -15,3 +15,17 @@ bundle install
 rails g rspec:install 
 rails g figaro:install 
 rails g devise:install 
+
+# Begin model generation 
+rails g devise user 
+rails g model authorization \ 
+              provider:string \ 
+              uid:string \
+              user_id:integer \ 
+              token:string \ 
+              secret:string \ 
+              name:string \ 
+              url:string
+# Copy user file 
+# Add relationships 
+rake db:migrate 
