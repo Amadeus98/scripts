@@ -6,7 +6,7 @@ APP_NAME=$1
 APP_PATH=$2
 
 # Generate Rails API and copy over files 
-rails-api new $APP_PATH/$APP_NAME --skip-test-unit
+rails-api new $APP_PATH/$APP_NAME --skip-test-unit --skip-bundle
 cp default-gemfile $APP_PATH/$APP_NAME/Gemfile
 
 # cd into directory and begin Rails-related installs
