@@ -20,4 +20,6 @@ rails g devise:install
 mkdir client/
 cd client/
 yo angular $APP_NAME
+bower install 
+sudo npm install 
 sudo npm install --save-dev grunt-connect-proxy
